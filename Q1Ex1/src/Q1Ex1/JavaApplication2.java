@@ -37,17 +37,17 @@ public class JavaApplication2 {
         System.out.printf("Type of Sitcom: %s \n", typeC);
         System.out.printf("Number of Seasons: %d \n \n", aSeasons);
         
-        boolean aWorkplaceSitcom = true;
-        boolean notAWorkplaceSitcom = false;
-        
         boolean hasMoreSeasons = true;
         boolean hasLessSeasons = false;
         
         System.out.printf("Total Number of Seasons: %d \n", (bSeasons + aSeasons*2));
-        System.out.println("New Girl is a workplace sitcom:"); {
-            if (typeC == "Workplace")
-                System.out.println(notAWorkplaceSitcom);
-                        else System.out.println(aWorkplaceSitcom);
+        System.out.println("New Girl is a workplace sitcom: " + (typeC.equals(typeA)));
+        
+        if (bSeasons > aSeasons) {
+            System.out.println("Modern Family has more seasons than Parks and Recreation: " + hasMoreSeasons);
+        }
+        else {
+            System.out.println("Modern Family has more seasons than Parks and Recreation: " + hasLessSeasons);
         }
     }
     
